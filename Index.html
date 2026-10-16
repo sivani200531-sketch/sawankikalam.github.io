@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>सावन की कलम (Sawan Ki Kalam) | Official Shayari Portal</title>
+  
+  <!-- Google SEO & Search Console Meta Tags -->
+  <meta name="description" content="सावन की कलम (Sawan Ki Kalam) - हिंदी और देसी हरियाणवी शायरी का आधिकारिक पोर्टल। मोहब्बत, दर्द, तन्हाई, बेवफ़ाई और ख़ुद्दारी पर 100+ मौलिक शायरियाँ।" />
+  <meta name="keywords" content="सावन की कलम, Sawan Ki Kalam, Sawan Shayari, Haryanvi Shayari, Hindi Sad Shayari, Desi Shayari, Sawan Official" />
+  <meta name="author" content="Sawan" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- OpenGraph for WhatsApp / Instagram Link Sharing -->
+  <meta property="og:title" content="सावन की कलम | Sawan Official Shayari Portal" />
+  <meta property="og:description" content="जज़्बात, दर्द और देसी हरियाणवी अंदाज़ — सावन की 100+ बेहतरीन शायरियाँ पढ़ें और शेयर करें।" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --surface: #12151c;
+      --surface-hover: #181c26;
+      --border: #242938;
+      --gold: #d4af37;
+      --gold-soft: rgba(212, 175, 55, 0.14);
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --accent: #e11d48;
+    }
+
+    [data-theme="light"] {
+      --bg: #faf7f2;
+      --surface: #ffffff;
+      --surface-hover: #f5efe6;
+      --border: #e5dec9;
+      --gold: #9a6f0a;
+      --gold-soft: rgba(154, 111, 10, 0.12);
+      --text: #1c1917;
+      --muted: #57534e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Serif Devanagari', sans-serif;
+      line-height: 1.7;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 12, 16, 0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    [data-theme="light"] header {
+      background: rgba(250, 247, 242, 0.92);
+    }
+
+    .nav-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #d4af37, #8a640f);
+      color: #000;
+      font-weight: 800;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, serif;
+    }
+
+    .brand-title {
+      font-family: Georgia, 'Noto Serif Devanagari', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .brand-sub {
+      font-size: 0.72rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      display: block;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-outline {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .hero {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 48px 20px 30px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 50px;
+      background: var(--gold-soft);
+      color: var(--gold);
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .hero h1 {
+      font-family: Georgia, 'Noto Serif Devanagari', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto 24px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      text-align: center;
+    }
+
+    .stat-num {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .author-strip {
+      max-width: 1180px;
+      margin: 24px auto 0;
+      padding: 0 20px;
+    }
+
+    .author-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .author-info h3 {
+      font-size: 1.15rem;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .author-info p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .controls-section {
+      max-width: 1180px;
+      margin: 26px auto 18px;
+      padding: 0 20px;
+    }
+
+    .search-box {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 14px 18px;
+      border-radius: 12px;
+      font-size: 0.98rem;
+      outline: none;
+      margin-bottom: 16px;
+      transition: border 0.2s;
+    }
+
+    .search-box:focus {
+      border-color: var(--gold);
+    }
+
+    .category-tabs {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      scrollbar-width: none;
+    }
+
+    .cat-btn {
+      background: var(--surface);
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: 0.2s;
+    }
+
+    .cat-btn.active, .cat-btn:hover {
+      background: var(--gold);
+      color: #000;
+      border-color: var(--gold);
+      font-weight: 600;
+    }
+
+    .main-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 10px 20px 50px;
+    }
+
+    .shayari-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 20px;
+    }
+
+    .shayari-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 22px 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+      position: relative;
+    }
+
+    .shayari-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(212, 175, 55, 0.5);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .cat-tag {
+      font-size: 0.74rem;
+      padding: 3px 10px;
+      border-radius: 4px;
+      background: var(--gold-soft);
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    .serial-no {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: monospace;
+    }
+
+    .shayari-text {
+      font-family: Georgia, 'Noto Serif Devanagari', serif;
+      font-size: 1.15rem;
+      line-height: 1.85;
+      white-space: pre-line;
+      margin-bottom: 18px;
+      color: var(--text);
+    }
+
+    .signature {
+      font-size: 0.82rem;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .card-footer {
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .action-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    .icon-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 5px 11px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .icon-btn:hover {
+      border-color: var(--gold);
+      color: var(--text);
+    }
+
+    .icon-btn.liked {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .delete-btn {
+      background: rgba(225, 29, 72, 0.15);
+      color: #f43f5e;
+      border: 1px solid #f43f5e;
+      padding: 4px 9px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+
+    .load-more-wrap {
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #000;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn-gold:hover {
+      opacity: 0.9;
+    }
+
+    #adminPanel {
+      display: none;
+      max-width: 1180px;
+      margin: 24px auto;
+      padding: 0 20px;
+    }
+
+    .admin-box {
+      background: var(--surface);
+      border: 2px solid var(--gold);
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .admin-box h3 {
+      color: var(--gold);
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 12px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      font-family: inherit;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--gold);
+      color: #000;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      display: none;
+      z-index: 999;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-logo">सा</div>
+        <div>
+          <span class="brand-title">सावन की कलम</span>
+          <span class="brand-sub">Official Shayari Archive</span>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <button class="btn-outline" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+        <button class="btn-outline" onclick="handleAdminAccess()" id="adminToggleBtn">🔒 Admin</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="verified-badge">✓ आधिकारिक साहित्य एवं शायरी पोर्टल</div>
+    <h1>जज़्बात जो सीधे <span>रूह को छू जाएँ</span></h1>
+    <p>सावन के मौलिक अल्फ़ाज़ — देसी हरियाणवी तेवर, मोहब्बत की कसक, अधूरे ख्वाब और ज़िंदगी की हकीकत पर 100+ चुनिंदा शायरियाँ।</p>
+    <div class="stats-bar">
+      <div class="stat-box">
+        <div class="stat-num" id="totalShayariCount">105</div>
+        <div class="stat-label">कुल शायरियाँ</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" id="totalLikesCount">4,820+</div>
+        <div class="stat-label">पाठकों का प्यार</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">6</div>
+        <div class="stat-label">प्रमुख श्रेणियाँ</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="author-strip">
+    <div class="author-card">
+      <div class="author-info">
+        <h3>✒️ सावन (Sawan) <span style="font-size:0.78rem; color:var(--gold); font-weight:500;">• लेखक एवं शायर (हरियाणा)</span></h3>
+        <p>"लिखने पर आऊँ तो किताब लिख दूँ..." — दिल के सच्चे जज़्बात और देसी हरियाणवी अंदाज़ को काग़ज़ पर उतारने का एक छोटा सा सफ़र।</p>
+      </div>
+      <div>
+        <button class="btn-outline" onclick="shareWebsite()">🔗 वेबसाइट लिंक शेयर करें</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="adminPanel">
+    <div class="admin-box">
+      <h3>
+        <span>👑 सावन एडमिन स्टूडियो (सिर्फ आपके नियंत्रण में)</span>
+        <button class="btn-outline" onclick="logoutAdmin()">लॉगआउट 🔒</button>
+      </h3>
+      <div class="form-grid">
+        <select id="newCategory" class="input-field">
+          <option value="विशेष">विशेष (Sawan Special)</option>
+          <option value="देसी हरियाणवी">देसी हरियाणवी</option>
+          <option value="दर्द और तन्हाई">दर्द और तन्हाई</option>
+          <option value="मोहब्बत">मोहब्बत</option>
+          <option value="बेवफ़ाई">बेवफ़ाई</option>
+          <option value="ख़ुद्दारी और रुतबा">ख़ुद्दारी और रुतबा</option>
+        </select>
+        <textarea id="newShayariText" rows="4" class="input-field" placeholder="यहाँ अपनी नई शायरी लिखें..."></textarea>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn-gold" onclick="addShayariByAdmin()">+ वेबसाइट में शायरी पब्लिश करें</button>
+          <button class="btn-outline" onclick="exportUpdatedHTML()">💾 अपडेटेड वेबसाइट फाइल डाउनलोड करें</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="controls-section">
+    <input type="text" id="searchInput" class="search-box" placeholder="🔍 किसी भी शब्द से शायरी खोजें (जैसे: किताब, छोरे नै, दर्द, मोहब्बत, वक्त)..." oninput="resetAndRender()" />
+    <div class="category-tabs" id="categoryTabs">
+      <button class="cat-btn active" onclick="selectCategory('सभी', this)">सभी (All)</button>
+      <button class="cat-btn" onclick="selectCategory('विशेष', this)">⭐ सावन विशेष</button>
+      <button class="cat-btn" onclick="selectCategory('देसी हरियाणवी', this)">🔥 देसी हरियाणवी</button>
+      <button class="cat-btn" onclick="selectCategory('दर्द और तन्हाई', this)">💔 दर्द और तन्हाई</button>
+      <button class="cat-btn" onclick="selectCategory('मोहब्बत', this)">❤️ मोहब्बत</button>
+      <button class="cat-btn" onclick="selectCategory('बेवफ़ाई', this)">🥀 बेवफ़ाई</button>
+      <button class="cat-btn" onclick="selectCategory('ख़ुद्दारी और रुतबा', this)">👑 ख़ुद्दारी और रुतबा</button>
+    </div>
+  </section>
+
+  <main class="main-container">
+    <div class="shayari-grid" id="shayariGrid"></div>
+    <div class="load-more-wrap" id="loadMoreWrap">
+      <button class="btn-gold" onclick="loadMore()">और शायरियाँ पढ़ें (Load More) ↓</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 <strong>सावन की कलम (Sawan Ki Kalam)</strong> | सर्वाधिकार सुरक्षित।</p>
+    <p style="margin-top:6px; font-size:0.78rem;">यह पोर्टल केवल पढ़ने और शेयर करने के लिए है। नई रचनाएँ केवल लेखक (Sawan) द्वारा जोड़ी जा सकती हैं।</p>
+  </footer>
+
+  <div id="toast">कॉपी हो गया!</div>
+
+  <script>
+    const defaultShayaris = [
+      { id: 1, cat: "विशेष", likes: 142, text: "लिखने पर आऊँ तो मैं तुझ पर पूरी किताब लिख दूँ,\nतेरे दिए हर एक ज़ख्म का बेबाक हिसाब लिख दूँ।" },
+      { id: 2, cat: "विशेष", likes: 128, text: "उसने सोचा टूट गया होगा वो सावन अब तक,\nउसे क्या पता इस छोरे नै दर्द को ही अपनी ताकत बना लिया।" },
+      { id: 3, cat: "विशेष", likes: 119, text: "डेढ़ साल बाद देखा उसे किसी और की दुनिया में खुश,\nहम मुस्कुराकर लौट आए, मोहब्बत में शिकायत कैसी।" },
+      { id: 4, cat: "विशेष", likes: 98, text: "मैं तेरे बारे में किसी से बुरा नी कहने की कसम खा बैठा हूँ,\nवरना तेरी बेवफ़ाई के किस्से तो शहर भर को रुला देते।" },
+      { id: 5, cat: "विशेष", likes: 112, text: "क्या मोहब्बत का इज़हार हर बार लफ़्ज़ों में करना ज़रूरी है?\nकभी मेरी खामोश आँखों में भी अपना नाम पढ़ लिया कर।" },
+      { id: 6, cat: "विशेष", likes: 94, text: "ख़ूबसूरत हो जाती थी वो हर एक सुबह मेरी,\nजब बिना मांगे तेरी एक प्यारी सी याद आ जाती थी।" },
+      { id: 7, cat: "विशेष", likes: 105, text: "काग़ज़ और कलम से अब मेरी पक्की यारी हो गई है,\nजब से तेरी यादें इस दिल पर भारी हो गई हैं।" },
+      { id: 8, cat: "विशेष", likes: 89, text: "सावन की बरसात तो बस मौसम के साथ आती है,\nमेरे दिल की उदासी तो अब बारह महीने साथ रहती है।" },
+      { id: 9, cat: "विशेष", likes: 115, text: "तन्हाई में बैठकर जब भी खुद से बात करता हूँ,\nपता नहीं क्यों हर सवाल के जवाब में तेरा ही ज़िक्र आता है।" },
+      { id: 10, cat: "विशेष", likes: 101, text: "इंसान का सबसे बड़ा दुश्मन उसका बेकाबू मन होता है,\nजो उसे वहाँ ले जाता है जहाँ उसकी कोई कदर नहीं होती।" },
+      { id: 11, cat: "देसी हरियाणवी", likes: 134, text: "इस सीधे-सादे छोरे नै इतना भी कमज़ोर मत समझिए बावली,\nदिल टूटा है, हौसला आज भी पहाड़ बरगा है।" },
+      { id: 12, cat: "देसी हरियाणवी", likes: 121, text: "धोखा देण आळी तो बदलगी अपना रास्ता,\nपर इस छोरे नै आज भी यारी और वफ़ा निभानी आवै है।" },
+      { id: 13, cat: "देसी हरियाणवी", likes: 96, text: "म्हारे हरियाणे में बात जुबान की होया करै,\nकाग़ज़ी वादे तो शहर के नकली लोग करया करैं।" },
+      { id: 14, cat: "देसी हरियाणवी", likes: 108, text: "जिस छोरे नै तू आम समझकै छोड़गी थी,\nआज उसके लिखे लफ़्ज़ लोग स्टेटस पै लगाया करैं।" },
+      { id: 15, cat: "देसी हरियाणवी", likes: 88, text: "शक्ल पै मत जाइये मैडम, देसी ज़रूर हां,\nपर दिल में खोट और यारां गेल्यां धोखा कदे कोनी करया।" },
+      { id: 16, cat: "देसी हरियाणवी", likes: 92, text: "वक्त बदलण दे लाडले, जो आज मुँह फेर कै चालैं हैं,\nवे खुद आकर राम-राम करैंगे।" },
+      { id: 17, cat: "देसी हरियाणवी", likes: 104, text: "छोरे नै शौक कोनी था शायर बणन का,\nबस तेरी कुछ अधूरी बातां नै कलम पकड़ा दी।" },
+      { id: 18, cat: "देसी हरियाणवी", likes: 79, text: "हम तै दिल के साफ थे, इस करके हार गए,\nदिमाग ते खेलण आळे बाज़ी मार गए।" },
+      { id: 19, cat: "देसी हरियाणवी", likes: 86, text: "रुतबा तो म्हारा कल भी था अर आज भी रवैगा,\nएक तेरे बदल जाण तै इस छोरे नै कोई फर्क कोनी पड़ता।" },
+      { id: 20, cat: "देसी हरियाणवी", likes: 95, text: "दुनियादारी की समझ थोड़ी लेट आई मने,\nपर जितनी आई, घणो के नकाब उतारगी।" },
+      { id: 21, cat: "देसी हरियाणवी", likes: 83, text: "इस छोरे नै तेरी हर गलती माफ करी थी,\nअर तनै इसे बात का नाजायज़ फायदा उठा लिया।" },
+      { id: 22, cat: "देसी हरियाणवी", likes: 91, text: "माँ के संस्कार और बापू की इज्ज़त बांध राखी है,\nना तै जवाब देण में हम भी किसे तै कम कोनी।" },
+      { id: 23, cat: "देसी हरियाणवी", likes: 77, text: "पीसै का घमंड उननै होया करै जिननै नया देख्या हो,\nहम तै यारां की महफ़िल नै ही अपनी दौलत मान्या करां।" },
+      { id: 24, cat: "देसी हरियाणवी", likes: 84, text: "छोरे नै चुप रहणा सीख लिया है अब,\nक्योंकि समझण आळे रहे कोनी अर नासमझ नै समझाणा बेकार है।" },
+      { id: 25, cat: "देसी हरियाणवी", likes: 110, text: "पाणीपत की माटी का असर है मैडम,\nअकड़ तो राखां कोनी, पर स्वाभिमान पै आंच भी कोनी आण देते।" },
+      { id: 26, cat: "देसी हरियाणवी", likes: 72, text: "तेरी मीठी बातां के चक्कर में आपणा चैन खो बैठे,\nभले चंगे हांडै थे, बेमात की टेंशन मोल ले बैठे।" },
+      { id: 27, cat: "देसी हरियाणवी", likes: 80, text: "छोरे नै नफरत कोनी करी कदे तोहे तै,\nबस अब भरोसा करण की हिम्मत खत्म होगी।" },
+      { id: 28, cat: "देसी हरियाणवी", likes: 89, text: "म्हारी खामोशी नै म्हारी कमज़ोरी मत मानियो,\nतूफान आण तै पहले भी मौसम शांत होया करै।" },
+      { id: 29, cat: "दर्द और तन्हाई", likes: 97, text: "कुछ ज़ख्म ऐसे होते हैं जो कभी दिखते नहीं,\nमगर रात की खामोशी में बहुत ज़ोर से दुखते हैं।" },
+      { id: 30, cat: "दर्द और तन्हाई", likes: 85, text: "हँसता हुआ चेहरा देखकर सबने कहा खुशकिस्मत हो,\nकिसी ने ये न पूछा कि इस मुस्कान के पीछे कितने आँसू छिपे हैं।" },
+      { id: 31, cat: "दर्द और तन्हाई", likes: 78, text: "अब किसी से कोई गिला नहीं रहा मुझे,\nजब अपने ही न समझे तो गैरों से क्या उम्मीद रखें।" },
+      { id: 32, cat: "दर्द और तन्हाई", likes: 90, text: "एक उम्र गुज़ार दी हमने जिनकी फिक्र में,\nउन्हें एक पल भी न लगा हमें परायों की कतार में खड़ा करने में।" },
+      { id: 33, cat: "दर्द और तन्हाई", likes: 68, text: "नीं
